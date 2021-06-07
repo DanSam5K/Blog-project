@@ -4,7 +4,19 @@
 <ul>
   <% @articles.each do |article| %>
     <li>
+      <p>display all articles in the database</p>
       <%= article.title %>
+    </li>
+  <% end %>
+</ul>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <p>linked to page that contains a single article</p>
+      <a href="/articles/<%= article.id %>">
+        <%= article.title %>
+      </a>
     </li>
   <% end %>
 </ul>
