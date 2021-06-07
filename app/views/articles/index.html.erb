@@ -1,25 +1,18 @@
 <h1>Articles</h1>
 
-<ul>
-  <% @articles.each do |article| %>
-    <li>
-      <p>display all articles in the database</p>
-      <%= article.title %>
-    </li>
-  <% end %>
-</ul>
+Our blog has <%= Article.public_count %> articles and counting!
 
 <ul>
   <% @articles.each do |article| %>
-    <li>
-      <p>linked to page that contains a single article</p>
+    <% unless article.archived? %>
+      <li>
         <%= link_to article.title, article %>
-      </a>
-    </li>
+      </li>
+    <% end %>
   <% end %>
 </ul>
 
-<p> link to create New Article </p>
 <%= link_to "New Article", new_article_path %>
+
 
 
