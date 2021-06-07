@@ -1,20 +1,32 @@
+<div class="container">
+
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
-    <p>
-      <%= form.label :commenter %><br>
-      <%= form.text_field :commenter %>
-    </p>
-    <p>
-      <%= form.label :body %><br>
-      <%= form.text_area :body %>
-    </p>
-    <p>
-      <%= form.submit %>
-    </p>
-    <p>
-     <%= form.label :status %><br>
-     <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
-    </p>
+    <div class="form-floating mb-1 py-2">
+      <%= form.text_field :commenter, class: "form-control p-3", id: "floatingInput", placeholder: "Title" %>
+      <%= form.label :commenter, for: "floatingInput" %><br>
+    </div>
+  
+    <div class="form-floating mb-1 py-2">
+      <%= form.text_area :body, class: "form-control p-4", id: "floatingTextarea", placeholder: "Content" %><br>
+      <%= form.label :body, for: "floatingTextarea" %><br>
+    </div>
+
+    <div>
+     <%= form.label :status, class: 'text-center d-block' %><br>
+     <%= form.select(:status, ['public', 'private', 'archived'], {}, {class: "form-select"}) %>
+    </div>
+  
+    <div>
+      <%= form.submit class: "btn btn-outline-primary w-50 mx-auto d-block mt-3" %>
+    </div>
+
+    
+
+    
 <% end %>
+
+</div>
+
 
 
   
