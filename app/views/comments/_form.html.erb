@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mb-5 pb-5">
 
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
     <div class="form-floating mb-1 py-2">
@@ -17,12 +17,8 @@
     </div>
   
     <div>
-      <%= form.submit class: "btn btn-outline-primary w-50 mx-auto d-block mt-3" %>
+      <%= form.submit class: "btn btn-outline-primary w-50 mx-auto d-block my-3" %>
     </div>
-
-    
-
-    
 <% end %>
 
 </div>
