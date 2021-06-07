@@ -14,8 +14,7 @@
   <% @articles.each do |article| %>
     <li>
       <p>linked to page that contains a single article</p>
-      <a href="/articles/<%= article.id %>">
-        <%= article.title %>
+        <%= link_to article.title, article %>
       </a>
     </li>
   <% end %>
