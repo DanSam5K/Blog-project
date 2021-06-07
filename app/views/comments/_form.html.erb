@@ -1,0 +1,28 @@
+<div class="container mb-5 pb-5">
+
+<%= form_with model: [ @article, @article.comments.build ] do |form| %>
+    <div class="form-floating mb-1 py-2">
+      <%= form.text_field :commenter, class: "form-control p-3", id: "floatingInput", placeholder: "Title" %>
+      <%= form.label :commenter, for: "floatingInput" %><br>
+    </div>
+  
+    <div class="form-floating">
+      <%= form.text_area :body, class: "form-control py-5 px-4", id: "floatingTextarea", placeholder: "Content" %><br>
+      <%= form.label :body, for: "floatingTextarea" %><br>
+    </div>
+
+    <div>
+     <%= form.label :status, class: 'text-center d-block' %><br>
+     <%= form.select(:status, ['public', 'private', 'archived'], {}, {class: "form-select"}) %>
+    </div>
+  
+    <div>
+      <%= form.submit class: "btn btn-outline-primary w-50 mx-auto d-block my-3" %>
+    </div>
+<% end %>
+
+</div>
+
+
+
+  

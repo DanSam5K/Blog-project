@@ -1,0 +1,25 @@
+<h1 class="text-muted text-center">Articles</h1>
+
+<p class="alert alert-info">Our blog has <strong class="fs-6"> <%= Article.public_count %> </strong> articles and counting!</p>
+
+<%= link_to "New Article", new_article_path, class: 'btn btn-outline-success w-50 mx-auto d-block mt-5' %>
+
+<section class="section">
+    <div class="container-md my-5">
+        <div class="row">
+            <% @articles.each do |article| %>
+                <div class="card border-light mb-3 col-12 col-md-6 col-xl-4">
+                    <div class="card-header" style="background-color: #e3f2fd;">Author Name</div>
+                    <div class="card-body py-4">
+                        <h5 class="card-title text-uppercase"> <%= link_to article.title, article, class: 'text-decoration-none text-primary' %> </h5>
+                        <p class="card-text py-2"> <%= article.body %> </p>
+                        <%= link_to "SEE MORE", article, class: "btn btn-outline-info text-uppercase fw-bolder fs-6" %>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</section>
+
+
+
