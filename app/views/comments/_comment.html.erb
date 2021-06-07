@@ -1,15 +1,17 @@
-<p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
-
-<p>
-  <strong>Comment:</strong>
-  <%= comment.body %>
-</p>
-<p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
-              method: :delete,
-              data: { confirm: "Are you sure?" } %>
-</p>
+<div class="card border-light col-12">
+    <div class="card-header" style="background-color: #e3f2fd;">
+        <strong>Commenter:</strong> <%= comment.commenter %>
+    </div>
+    <div class="card-body py-4">
+        <p class="card-text">
+          <%= comment.body %>
+        </p>
+        <p>
+          <%= link_to 'Destroy Comment', [comment.article, comment],
+                      method: :delete,
+                      data: { confirm: "Are you sure?" },
+                      class: "text-decoration-none btn btn-outline-danger" %>
+        </p>
+    </div>
+</div>
 
