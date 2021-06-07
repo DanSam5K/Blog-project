@@ -2,7 +2,7 @@
 
 # Blog Post Project
 
-- In this project, got the opportunity to actually build a real Rails application. It’s not a trivially simple one either. An Interesting project that enable us harness all the power and beauty of Rails on Ruby to build a blog that enable users perform CRUD actions with blog post and other users can comments with options to also perform certain actions
+- In this project, got the opportunity to actually build a real Ruby on Rails application. It’s not a trivially simple one either. An Interesting project that enables us to harness all the power and beauty of Rails on Ruby to build a blog that enables users to perform CRUD actions with the blog post and other users can comment with options to also perform certain actions
 
 ## Live Demo 👀
 
@@ -14,13 +14,13 @@
 
 ## Objectives
 - First project build with Ruby on Rails. The main goal here is to make it up and running
-- Undertand Bascis of CRUD operations
-- Develop solid expereince on how to build full-stack applications
+- Understand the Basics of CRUD operations
+- Develop solid experience on how to build full-stack applications
 - Understand Model-View-Controller(MVC)) design pattern
 
 ## Technologies and Tools
 * Ruby on Rails
-* Databases (SQlite and Postgres) SQL
+* Databases (SQLite and Postgres) SQL
 * Linters such Rubocop and Git worfklows linters
 * Yarn
 * Gem dependency plugins
@@ -29,11 +29,11 @@
 * Heroku
 
 ## Installations 
-- Make sure you have ruby installed if not? click [here](https://www.rubyguides.com/ruby-tutorial/)
-- You click [here](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/your-first-rails-application-ruby-on-rails) to Install rails in your local machine Visit [Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) for better understanding on how the project works
+- Make sure you have ruby installed if not? Click [here](https://www.rubyguides.com/ruby-tutorial/)
+- You click [here](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/your-first-rails-application-ruby-on-rails) to Install rails in your local machine Visit [Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) for a better understanding of how the project works
 
 ## Getting Started
-- Local copy of project can obtain by cloning into any folder from local machine with these few steps:
+- Local copy of the project can obtain by cloning into any folder from a local machine with these few steps:
 **Step 1**
 ```
 ~$ git clone https://github.com/DanSam5K/Blog-App.git
@@ -75,9 +75,9 @@
 - Go to the repo
 - Open a pull request
 or
-- Feel free with a click [issues page](https://github.com/DanSam5K/Blog-App/issues).
+- Feel free with click [issues page](https://github.com/DanSam5K/Blog-App/issues).
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 ## Show Your Support
 Give a ⭐️ if you like this project!
