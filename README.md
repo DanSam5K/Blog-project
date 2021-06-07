@@ -8,7 +8,8 @@
 
 [Live Demo Link](https://blog-app-rorails.herokuapp.com/)
 
-![Home screenshot](lib/assets/homepage.png) ![Create post screenshot](lib/assets/createpost.png) ![Action page screenshot](lib/assets/deleteditpost.png)
+![Home screenshot](lib/assets/home.PNG)
+![Article screenshot](lib/assets/article_with_comments.PNG) ![Create Article screenshot](lib/assets/create_new_article.PNG) 
 
 
 ## Objectives
@@ -45,11 +46,11 @@
 ```
 ~$ cd Blog-App
 ```
-**Step 3**
+**Step 4**
 ```
 ~$ bundle install
 ``` 
-**Step 3 run**
+**Step 5 run**
 ```
 ~$ rails server
 ``` 
